@@ -1,29 +1,98 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HUB Monte Verde</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>HUB Monte Verde - Hotéis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+    header {
+      background-color: #1e3d59;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 18px;
+    }
+    .card-content h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #1e3d59;
+    }
+    .card-content p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background-color: #ff6e40;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>HUB MONTE VERDE</h1>
-    <p>Central de negócios da hotelaria local com IA</p>
+    <h1>HUB Monte Verde</h1>
+    <p>Descubra os melhores hotéis e pousadas associados à MOVE</p>
   </header>
-  <main>
-    <section>
-      <h2>Integração com H-System</h2>
-      <p>Gestão inteligente de tarifas, canais e ocupação.</p>
-    </section>
-    <section>
-      <h2>Gestão colaborativa</h2>
-      <p>Unindo pousadas e hotéis em uma plataforma moderna.</p>
-    </section>
+  <main class="grid">
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.QOBIpc9IPJKOKrWxviI66QHaE7" alt="Chalés Florada do Amanhã" />
+      <div class="card-content">
+        <h3>Chalés Florada do Amanhã</h3>
+        <p>Ambiente acolhedor cercado pela natureza.</p>
+        <a href="#" class="btn">Ver detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.buLwf4pneXAOC4_ceEjvWgHaE8" alt="Green Village Hotel" />
+      <div class="card-content">
+        <h3>Green Village Hotel</h3>
+        <p>Conforto e tranquilidade no centro de Monte Verde.</p>
+        <a href="#" class="btn">Ver detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.tOH6bUq5lDSeRuL9zwju1AHaF3" alt="Pousada Suíça Mineira" />
+      <div class="card-content">
+        <h3>Pousada Suíça Mineira</h3>
+        <p>Charme e sofisticação em estilo alpino.</p>
+        <a href="#" class="btn">Ver detalhes</a>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p>© 2025 HUB MONTE VERDE</p>
-  </footer>
 </body>
 </html>
